@@ -8,8 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node index.tsx",
+    "dev": "nodemon index.tsx",
     "test": "nyc node test/index.js && npm run deps && standard",
     "deps": "npm run deps-missing && npm run deps-extra",
     "deps-missing": "dependency-check --no-dev .",

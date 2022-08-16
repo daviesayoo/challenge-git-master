@@ -1,5 +1,5 @@
 require('dotenv').config()
-var path = require('path')
+const path = require('path')
 
 module.exports = {
   level: {

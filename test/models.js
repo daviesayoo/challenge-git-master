@@ -1,12 +1,12 @@
 process.env.NODE_ENV = 'test'
 
-var tape = require('tape')
+const tape = require('tape')
 
-var Things = require('../lib/models/things')
+const Things = require('../lib/models/things')
 
 tape('should store and retrieve thing', function (t) {
-  var key = 'thing-A'
-  var value = {cat: 'hat'}
+  const key = 'thing-A'
+  const value = {cat: 'hat'}
   Things.put(key, value, function (err) {
     t.ifError(err, 'should not error')
 
